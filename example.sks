@@ -1,0 +1,9 @@
+$andrew_tate = ":smirk:"
+$dayum = 9
+
+out andrew_tate!
+out dayum!
+
+defunc thisIsAFunction():
+
+endf
