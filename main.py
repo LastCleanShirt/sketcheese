@@ -52,24 +52,21 @@ class Main:
 
     # Cmd Line
     def CmdLine(self):
-        try:
             #self.file_path = self.args[1]
-            print(self.file_path)
-            self.file = open(self.file_path, "r")
-            self.chars = self.file.read()
-            if self.arg_p.i:
-                self.Lexer(self.chars, self.token_exprs)
-                self.Parser()
-            elif self.arg_p.ctpy:
-                self.Lexer(self.chars, self.token_exprs)
-            else:
-                pass
+        print(self.file_path)
+        self.file = open(self.file_path, "r")
+        self.chars = self.file.read()
+        if self.arg_p.i:
+            self.Lexer(self.chars, self.token_exprs)
+            self.Parser()
+        elif self.arg_p.ctpy:
+            self.Lexer(self.chars, self.token_exprs)
+        else:
+            pass
 
-            if self.is_log:
-                self.PrintLog()
-        except IndexError as e:
-            print(e)
-            self.err.PrintErr(0, "Please specify the filename")
+        if self.is_log:
+            self.PrintLog()
+
     # Lexing
     def Lexer(self, characters, token_exprs):
         lexer = Lexer(characters)

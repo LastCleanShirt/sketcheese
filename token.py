@@ -3,28 +3,28 @@
 # LIST OF CONSTANTS
 DIGITS = "0123456789"
 WORDS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
-K_OUT = "OUT" # Prints out string or variable
-K_STR = "STR"
-K_FUNC = "DECLR_FUNC"
-TT_FUNC_N = "FUNC_N"
-TT_ST = "START" # The start of the function
-TT_END = "END" # The end of the function
-TT_DECLR = "DECLR" # $
-TT_DECLR_NAME = "DECLR_NAME"
-TT_VAR_CALL = "VAR_CALL"
-
+K_OUT = "<out keyword>" # Prints out string or variable
+K_STR = "<string>"
+K_FUNC = "<function declr>"
+TT_FUNC_N = "<function name>"
+TT_ST = "<start func define>" # The start of the function
+TT_END = "<end func define>" # The end of the function
+TT_DECLR = "<var declr>" # $
+TT_DECLR_NAME = "<var name>"
+TT_VAR_CALL = "<var call>"
+NK = "<not keyword>"
 
 # LIST OF TOKENS
-TT_INT = 'INT'
-TT_FLOAT = 'FLOAT'
-TT_PLUS = 'PLUS'
-TT_MINUS = 'MINUS'
-TT_DIV = 'DIV'
-TT_LPAREN = 'LPAREN' # (
-TT_RPAREN = 'RPAREN' # )
-TT_LAPOS = "LAPOS" # Left Apostrophe
-TT_RAPOS = "RAPOS" # Right Apostrophe
-TT_EQ = "EQ"
+TT_INT = '<int obj>'
+TT_FLOAT = '<float obj>'
+TT_PLUS = '<plus tk>'
+TT_MINUS = '<min tk>'
+TT_DIV = '<div tk>'
+TT_LPAREN = '<lparen tk>' # (
+TT_RPAREN = '<rparen tk>' # )
+TT_LAPOS = "<lapos tk>" # Left Apostrophe
+TT_RAPOS = "<rapos tk>" # Right Apostrophe
+TT_EQ = "<eq tk>"
 
 
 """class Token:
